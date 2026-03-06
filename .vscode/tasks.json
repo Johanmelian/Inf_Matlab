@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build control_app",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-lc",
+        "mkdir -p build && g++ -std=c++17 main.cpp Control_grt_rtw/Control.cpp -o build/control_app -IControl_grt_rtw -I/usr/local/MATLAB/R2024b/extern/include -I/usr/local/MATLAB/R2024b/simulink/include -I/usr/local/MATLAB/R2024b/rtw/c/src -I/usr/local/MATLAB/R2024b/rtw/c/src/ext_mode/common -I/usr/local/MATLAB/R2024b/rtw/c/ert"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Compila el ejecutable de prueba del controlador Simulink"
+    },
+    {
+      "label": "run control_app",
+      "type": "shell",
+      "command": "./build/control_app",
+      "args": [
+        "10",
+        "7"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "build control_app",
+      "problemMatcher": [],
+      "detail": "Compila y ejecuta control_app con valores de ejemplo"
+    }
+  ]
+}

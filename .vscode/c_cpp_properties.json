@@ -1,0 +1,37 @@
+{
+  "version": 4,
+  "configurations": [
+    {
+      "name": "Linux",
+      "compilerPath": "/usr/bin/g++",
+      "intelliSenseMode": "linux-gcc-x64",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${workspaceFolder}",
+        "${workspaceFolder}/Control_grt_rtw",
+        "/usr/local/MATLAB/R2024b/extern/include",
+        "/usr/local/MATLAB/R2024b/simulink/include",
+        "/usr/local/MATLAB/R2024b/rtw/c/src",
+        "/usr/local/MATLAB/R2024b/rtw/c/src/ext_mode/common",
+        "/usr/local/MATLAB/R2024b/rtw/c/ert"
+      ],
+      "defines": [
+        "MODEL=Control",
+        "NUMST=1",
+        "NCSTATES=0",
+        "HAVESTDIO"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "${workspaceFolder}/Control_grt_rtw",
+          "/usr/local/MATLAB/R2024b/extern/include",
+          "/usr/local/MATLAB/R2024b/simulink/include",
+          "/usr/local/MATLAB/R2024b/rtw/c/src"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      }
+    }
+  ]
+}
