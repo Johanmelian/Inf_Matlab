@@ -21,7 +21,7 @@ tRef = (linspace(0,Ts,s(1)))'; % this time variable is used in the "2D Visualiza
 
 %% define parameters used in the models
 L = 1; % bicycle length
-ld = 3; % lookahead distance
+ld = 6; % lookahead distance
 X_o = refPose(1,1); % initial vehicle position
 Y_o = -refPose(1,2); % initial vehicle position 
 X_end = refPose(end,1);
