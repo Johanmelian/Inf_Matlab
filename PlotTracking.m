@@ -1,6 +1,6 @@
-plot(xRef, yRef, 'b--', 'LineWidth', 1); hold on;
-plot(out.xFb.Data, out.yFb.Data, 'r-', 'LineWidth', 2); hold on;
+plot(yRef, xRef, 'b--', 'LineWidth', 1); hold on;
+plot(out.yFb.Data, out.xFb.Data, 'r-', 'LineWidth', 2); hold on;
 title('Trayectoria XY del Robot');
-xlabel('Posición X (m)');
-ylabel('Posición Y (m)');
+xlabel('Posición Y (m)');
+ylabel('Posición X (m)');
 grid on;
