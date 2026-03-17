@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Compile Control (Makefile)",
+			"type": "shell",
+			"command": "make",
+			"args": [
+				"-f",
+				"Control.mk"
+			],
+			"isBackground": false,
+			"group": "build"
+		}
+	]
+}
